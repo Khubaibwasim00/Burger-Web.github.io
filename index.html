@@ -2,291 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200;400&family=Pangolin&family=Poppins:ital,wght@0,400;1,400;1,500&family=Preahvihear&family=Roboto+Condensed&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">    
-    <title>Burger Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200;400&family=Poppins:ital,wght@0,400;1,400;1,500&family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title> Khubaib University</title>
 </head>
 <body>
-   
-    <!-- header section  -->
-    
-    <section class="header" id="header">
-        <div id="menu-btn" class="fas fa-bars icons"></div>
-        <div id="search-btn" class="fas fa-search icons"></div>
-
-        <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Menu">Menu</a>
-            <span class="space"></span>
-            <a href="#Review">Review</a>
-            <a href="#Contact">Contact</a>
-            <a href="#Blogs">Blogs</a>
+    <section class="Header">
+        <nav>
+            <a href="index.html"> <img src="images/logo-removebg-preview.png"></a>
+            <div class="nav-link" id="nav-link">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <!-- <h2>Khubaib University</h2> -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Abt.html">About us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-
-        <a href="#" class="fas fa-shopping-cart icons"></a>
-
-        <a href="#Home" class="logo"><img src="Images/logo-removebg-preview.png" class="img"></a>
-
-        <form action="" class="search-form">
-            <input type="search" placeholder="Search Here..." id="search-box">
-            <label for="search-box" class="fas fa-search icons"></label>
-           
-        </form>
-    </section>
-
-    <!-- Home section -->
-
-    <section class="home" id="Home">
-        <div class="content">
-            <img data-aos="fade-right"  data-aos-delay="150" src="Images/Images/burger2.png" alt="">
-            <h3 data-aos="fade-up" data-aos-delay="300">So Meaty You'll Go Crazy</h3>
-            <p data-aos="fade-up" data-aos-delay="450">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deserunt consequuntur sunt.</p>
-            <a data-aos="fade-up" data-aos-delay="600-" href="#" class="btn">Our Menu</a>
+        <div class="text-box">
+            <h1>World's Biggest <span class="span"> University </span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis qui doloremque inventore ab assumenda sapiente facilis, aliquid impedit dolorem, soluta veniam odio minus reiciendis incidunt exercitationem.</p>
+            <a href="" class="Hero-btn">Visit Us to know More</a>
         </div>
     </section>
 
+    <!-- Courses -->
 
-    <!-- services section  -->
-    <section class="services" id="Services">
-        <div class="box" data-aos="fade-up"  data-aos-delay="450">
-            <i class="fas fa-hamburger"></i>
-            <h3>Best Quality</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderi..</p>
-        </div>
-        <div class="box" data-aos="fade-up"  data-aos-delay="450">
-            <i class="fas fa-shipping-fast"></i>
-            <h3>Free Delivery</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderit.</p>
-        </div>
-        <div class="box" data-aos="fade-up"  data-aos-delay="450">
-            <i class="fas fa-headset"></i>
-            <h3>24/7 Support</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderit.</p>
-        </div>
-    </section>
-    
-    <!-- menu section  -->
-
-    <section class="menu" id="Menu">
-        <div class="heading">
-            <img src="Images/title-removebg-preview(1).png">
-            <h3>Our Menu</h3>
+    <section class="course">
+        <h1>Courses we Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ratione similique dolorum ex, excepturi nihil minima consequuntur quae quia, ullam quis libero! Maiores nulla dignissimos beatae rerum!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ratione similique dolorum ex, excepturi nihil minima consequuntur quae quia, ullam quis libero! Maiores nulla dignissimos beatae rerum!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ratione similique dolorum ex, excepturi nihil minima consequuntur quae quia, ullam quis libero! Maiores nulla dignissimos beatae rerum!</p>
+            </div>
         </div>
 
-        <div class="box-container">
-            
-            <div class="box" data-aos="fade-right"  data-aos-delay="600">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box" data-aos="fade-left"  data-aos-delay="1000">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box" data-aos="fade-right"  data-aos-delay="1000">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box" data-aos="fade-left"  data-aos-delay="1000">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box" data-aos="fade-right"  data-aos-delay="1000">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                          <a href="#" class="btn">Add to Cart</a>
-                </div> 
-            </div>
-            <div class="box" data-aos="fade-left"  data-aos-delay="1000">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box" data-aos="fade-right"  data-aos-delay="1000">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheeese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box" data-aos="fade-left"  data-aos-delay="1000">
-                <img src="Images/Images/burger2.png">
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cheese Hamburger</h3>
-                    <div class="price">$15.00</div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-           
-           
-            </div>
-       
-           </div>
-        </div>     
     </section>
 
-    <!-- About us -->
-
-    <section class="about" id="about">
-       <div class="image" data-aos="fade-left"  data-aos-delay="1200">
-        <img src="Images/Images/B4" alt="">
-       </div>
-
-       <div class="content" data-aos="fade-right"  data-aos-delay="1200">
-        <h3 class="title">Step into Burger Heaven</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cupiditate odit maxime.</p>
-
-        <div class="icons" data-aos="fade-right"  data-aos-delay="1200">
-            <h3 class="title"><i class="fas fa-check"></i> Best Price</h3>
-            <h3 class="title"><i class="fas fa-check"></i> Best Service</h3>
-            <h3 class="title"><i class="fas fa-check"></i> Fresh Ingredients</h3>
-            <h3 class="title"><i class="fas fa-check"></i> Backed buns</h3>
-            <h3 class="title"><i class="fas fa-check"></i> Natural Chese</h3>
-            <h3 class="title"><i class="fas fa-check"></i> Veg & Non-Veg</h3>
-        </div>
-        <a href="#" class="btn">Read More</a>
-       </div>
-    </section>
-
-    <!-- contact us -->
-
-    <section class="contact" id="Contact">
-        <div class="heading">
-            <div class="image">
-                <img src="Images/title-removebg-preview(1).png" alt="">
-                <h3>Contact Us</h3>
-            </div>
+    <!-- campus -->
+         <section class="campus">
+            <h1>Our Global Campus</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquam sunt nostrum, illum magni dicta qui ducimus neque dolorem excepturi ratione, pariatur itaque.</p>
             <div class="row">
-                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115901.12403346726!2d66.98538384341435!3d24.79853083052908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33cf02eda6f15%3A0x937892677f0377a2!2sDefence%20Housing%20Authority%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2075500%2C%20Pakistan!5e0!3m2!1sen!2s!4v1686676625313!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <div class="form">
-                    <div class="icon-container">
-                        <div class="icon">
-                            <i class="fas fa-map font"></i>
-                            <h3>Address:</h3>
-                            <p>Karachi, Pakistan</p>
-                        </div>
-                       
-                        <div class="icon">
-                            <i class="fas fa-envelope font"></i>
-                            <h3>Email:</h3>
-                            <p>Burger@gmail.com</p>
-                        </div>
-                        
-                        <div class="icon">
-                            <i class="fas fa-phone font"></i>
-                            <h3>Phone:</h3>
-                            <p>+123-456-7890</p>
-                        </div>
+                <div class="campus-col">
+                    <img src="images/London.webp">
+                 <div class="layer">
+                        <h3>LONDON</h3>
                     </div>
-
-                    <form action="">
-                        <input type="text" placeholder="Full-Name" class="box">
-                        <input type="text" placeholder="Full-Email" class="box">
-                        <input type="number" placeholder="Phone Number" class="box">
-                        <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
-                        <input type="submit" value="Send Message" class="box">
-                    </form>
+                </div>
+                <div class="campus-col">
+                    <img src="images/Washington.webp">
+                    <div class="layer">
+                        <h3>WASHINGTON</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/NYC.webp">
+                    <div class="layer">
+                        <h3>NEW YORK</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
 
 
+        </section>
 
+            <!-- facilities -->
 
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+            <section class="facilities">
+                <h1>Our Facilities</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas saepe velit, ipsam, deserunt distinctio officia voluptas natus quae facilis aliquam, accusantium impedit ullam debitis!</p>
+                <div class="row">
+                    <div class="fac-col">
+                        <img src="images/library.jpg" >
+                        <h3>World Class Library</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore omnis consequuntur itaque.</p>
+                    </div>
+                    <div class="fac-col">
+                        <img src="images/football.jpg" >
+                        <h3>Physical Education</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore omnis consequuntur itaque.</p>
+                    </div>
+                    <div class="fac-col">
+                        <img src="images/cafe.jpg" >
+                        <h3>Delicious Food</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore omnis consequuntur itaque.</p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- testimonials -->
+            <section class="testimonials">
+                <h1>What Our Students says</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consequuntur repudiandae veniam distinctio, obcaecati dignissimos tempora in, doloribus labore sint perferendis.</p>
+                <div class="row">
+                    <div class="test">
+                        <img src="images/user.jpg" class="Elon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, magnam consequatur? Aut possimus, rem earum culpa sapiente dolore sunt blanditiis fugiat, aperiam doloremque quidem? Hic cum debitis fuga dolores sit laboriosam soluta repudiandae.</p>
+                        <h3>Elon Musk</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="test">
+                        <img src="images/user2.webp">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, magnam consequatur? Aut possimus, rem earum culpa sapiente dolore sunt blanditiis fugiat, aperiam doloremque quidem? Hic cum debitis fuga dolores sit laboriosam soluta repudiandae.</p>
+                        <h3>Imran Khan</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Call to action -->
+
+            <section class="CTA">
+                <h1>Enroll For our Various Courses Anywhere from the World</h1>
+                <a href="" class="Hero-btn">Contact Us</a>
+            </section>
+
+           <!-- footer -->
+
+           <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo repellendus dolorem consequuntur praesentium consequatur, tempora unde <br> velit voluptatem asperiores? </p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+            
+           </section>
+            
+        
+
+    
+    
+    
+    
     <script>
-        AOS.init({
-            duration: 800,
-        });
+        let navlinks = document.getElementById("nav-link")
+
+        function showMenu(){
+            navlinks.style.right = "0"
+
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px"
+        }
+
     </script>
 </body>
 </html>
