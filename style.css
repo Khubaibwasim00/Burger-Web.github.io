@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #eacf4f;
+        border-radius: 5rem;
+    }
+}
+
+p{
+ font-family: 'Preahvihear', sans-serif;
+}
+h2{
+    font-family: 'Geologica', sans-serif;
+}
+h3{
+    color: #eacf4f;
+    font-size: 3rem;
+    font-family: 'Pangolin', cursive;
+}
+h1{
+font-family: 'Poppins', sans-serif;
+}
+span{
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background: url(Images/Images/dark-wood-wall.jpg);
+    background-attachment: fixed;
+    background-position: center ;
+    overflow-x: hidden;
+}
+section{
+    padding: 3rem 9%;
+}
+
+.btn{
+    display:inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+    border: .2rem solid rgba(255,255,255,.3);
+    background: no-repeat;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+.btn:hover{
+    color: black;
+    background: white;
+}
+.header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    background: #030303;
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.icons{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+}
+.icons:hover{
+    color: #eacf4f;
+}
+#menu-btn{
+    display: none;
+}
+.navbar a{
+    color: white;
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: #eacf4f;
+}
+.navbar .space{
+    display: inline-block;
+    width: 16rem;
+}
+.logo{
+    position: absolute;
+    top: 1rem; left: 48.9%;
+    transform: translateX(-50%);
+}
+.logo img{
+    height: 6rem;
+    width: 14rem;
+    border-radius: 50%;
+    
+    
+}
+.search-form{
+    height: 7rem;
+    padding: 0 2rem;
+    border-top: .2rem solid rgba(255,255,255,.3);
+    display: flex;
+    align-items: center;
+    background: #000;
+    position: absolute;
+    top: 99%;left: 0;right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+input{
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: white;
+}
+.fa-times{
+    transform: rotate(180deg);
+}
+.home{
+    margin-top: 7rem;
+   
+}
+.home .content{
+    max-width: 70rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.home .content img{
+    width: 70%;
+    
+}
+.home .content h3{
+    color: #eacf4f;
+    font-size: 5rem;
+}
+.home .content p{
+    color: #eee;
+    font-size: 2rem;
+}
+.services{
+    display: flex;
+}
+
+.services .box{
+    text-align: center;
+    padding: 2rem;
+}
+.services .box i{
+    height: 7rem;
+    width: 7rem;
+    line-height: 7rem;
+    font-size: 2.5rem;
+    color: black;
+    background: #eacf4f;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+.services .box h3{
+     color: #eacf4f;
+     font-size: 3rem;
+     padding: 1rem 0;
+}
+.services .box p{
+    font-size: 2rem;
+    color: white;
+}
+.heading img{
+    width: 50%;
+    margin-bottom: 1px;  
+}
+.heading h3{
+    font-size: 5rem;
+    
+}
+.menu .heading img{
+    margin-left: 32rem;
+}
+.menu .heading h3{
+    margin-left: 50rem;
+    margin-top: -20%;
+    
+}
+.box-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-gap: 10px; /* Adjust as needed */
+  
+}
+.box{
+    margin: auto;
+}
+.menu .box-container .box img{
+    height: 25rem;
+}
+.menu .box-container .box .stars{
+    color: #eacf4f;
+    font-size: 3rem;
+}
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 5rem;
+}
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.about .image{
+    flex: 1 1 40rem;
+}
+.about .image img{
+    width: 120%;
+    
+    margin-left: -2px;
+ 
+}
+.about .image .content{
+    flex: 1 1 40rem;
+}
+.about .content .title{
+    color: #eee;
+    font-size: 4rem;
+}
+.about .content p{
+    color: #78fc04;
+    font-size: 1.5rem;
+}
+.fa-check{
+    color: #eacf4f;
+}
+.contact .heading h3{
+    margin-left: 48rem;
+    margin-top: -20%;   
+}
+.contact .heading img{
+    margin-left: 32rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.row .map{
+    flex: 1 1 40rem
+}
+.form{
+    flex: 1 1 40rem;
+
+}
+.form .icon-container{
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
+    grid-gap: 3px;
+}
+.icon{
+    display: inline-block;
+    flex: 1 1 17rem;
+    text-align: center;
+    margin-right: 20%;
+    padding-bottom: 50%;
+}
+.icon h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+    
+}
+.icon p{
+    font-size: 1.9rem;
+    color: #eee;
+}
+.icon .font-awesome{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    background: yellow;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media  */
+@media (max-width:1200px) {
+    .header{
+        padding: 3rem;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+}
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        justify-content: flex-end;
+        gap: 2rem;
+       
+       
+    }
+    #menu-btn{
+     display: inline-block;
+    }
+    .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background: black;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .navbar a{
+        display: block;
+        margin: 2rem;
+    }
+    .navbar .space{
+        display: none;
+    }
+    .logo{
+        transform: translateX(0);
+        left: 3rem;
+    }
+
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding: 3rem;
+    }
+}
+
